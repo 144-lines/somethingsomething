@@ -4,11 +4,11 @@ header = {
     'authorization': "token",
 }
 try:
-payload = {
+  payload = {
     "content": f "@everyone"
-}
-r = requests.post(url, data = payload, headers = header)
-print(f "Current status = {r.status_code}", end = "\r")
+  }
+  r = requests.post(url, data = payload, headers = header)
+  print(f "Current status = {r.status_code}", end = "\r")
 except:
     print("err")
 pass
