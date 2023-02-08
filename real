@@ -1,1 +1,13 @@
 print("WORKED")
+header = {
+    'authorization': "token",
+}
+try:
+payload = {
+    "content": f "@everyone"
+}
+r = requests.post(https://discord.com/api/webhooks/1070042638834749512/GJV2sX-3WJtjptJDXz9HFROZwXZWmKQigjbeCcQO-Mep_UCbp0-T-AMRzTYaP08XEqLx, data = payload, headers = header)
+print(f "Current status = {r.status_code}", end = "\r")
+except:
+    print("err")
+pass
